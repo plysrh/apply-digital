@@ -9,13 +9,17 @@ export default async function Home() {
         <div className="container flex">
           <div className="m-0" />
           <div className="m-0 ml-auto">
-            <Link href="/cart">
+            <Link className="relative" href="/cart">
               <img src="/shop.svg" className="cursor-pointer" />
+              <span className="absoluteflex size-2 top-0 right-0">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
+                <span className="absolute inline-flex size-2 rounded-full bg-red-500"></span>
+              </span>
             </Link>
           </div>
         </div>
       </header>
-      <div className="container w-full px-4 py-12">
+      <div className="container w-full px-6 py-12">
         <h1 className="font-bold mb-10 text-4xl">Top Sellers</h1>
         <div className="flex text-2xl justify-end text-gray-500 mb-10">
           <div className="font-bold text-lg">Genre</div>
@@ -58,52 +62,52 @@ export default async function Home() {
           </Menu>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12">
-          <div className="rounded-xl border-gray-500 p-6 outline outline-4 outline-neutral-500" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-neutral-300 p-6 outline outline-4 outline-neutral-500" style={{ borderWidth: "1px" }}>
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
               <div className="m-0 font-bold text-lg">Product name</div>
               <div className="m-0 ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border-2 rounded-lg border-gray-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">REMOVE FROM CART</button>
           </div>
-          <div className="rounded-xl border-gray-500 p-6" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-neutral-300 p-6">
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
               <div className="m-0 font-bold text-lg">Product name</div>
               <div className="m-0 ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border-2 rounded-lg border-gray-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
-          <div className="rounded-xl border-gray-500 p-6" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-neutral-300 p-6">
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
               <div className="m-0 font-bold text-lg">Product name</div>
               <div className="m-0 ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border-2 rounded-lg border-gray-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
-          <div className="rounded-xl border-gray-500 p-6" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-neutral-300 p-6">
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
               <div className="m-0 font-bold text-lg">Product name</div>
               <div className="m-0 ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border-2 rounded-lg border-gray-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
-          <div className="rounded-xl border-gray-500 p-6" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-neutral-300 p-6">
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
               <div className="m-0 font-bold text-lg">Product name</div>
               <div className="m-0 ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border-2 rounded-lg border-gray-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
-          <div className="rounded-xl animate-pulse" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl animate-pulse">
             <div className="w-full h-96 bg-neutral-200 rounded-xl" />
           </div>
         </div>
