@@ -11,7 +11,7 @@ export default async function Home() {
           <div className="m-0 ml-auto">
             <Link className="relative" href="/cart">
               <img src="/shop.svg" className="cursor-pointer" />
-              <span className="absoluteflex size-2 top-0 right-0">
+              <span className="absolute flex size-2 top-0 right-0">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75"></span>
                 <span className="absolute inline-flex size-2 rounded-full bg-red-500"></span>
               </span>
@@ -62,7 +62,7 @@ export default async function Home() {
           </Menu>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12">
-          <div className="rounded-xl border border-neutral-300 p-6 outline outline-4 outline-neutral-500" style={{ borderWidth: "1px" }}>
+          <div className="rounded-xl border border-sky-300 p-6 outline outline-4 outline-sky-500" style={{ borderWidth: "1px" }}>
             <div className="w-full h-52 mb-5" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
             <div className="flex mb-5">
