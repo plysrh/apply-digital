@@ -20,12 +20,12 @@ export default async function Home() {
         </div>
       </header>
       <div className="container w-full px-6 py-12">
-        <h1 className="font-bold mb-10 text-4xl">Top Sellers</h1>
-        <div className="flex text-2xl justify-end text-gray-500 mb-10">
+        <h1 className="font-bold mb-10 text-4xl text-neutral-800">Top Sellers</h1>
+        <div className="flex text-2xl justify-end text-neutral-500 mb-10">
           <div className="font-bold text-lg">Genre</div>
           <div className="text-lg mx-6">|</div>
           <Menu>
-            <MenuButton className="inline-flex items-center text-lg focus:outline-none data-[active]:text-gray-400 data-[hover]:text-gray-400">
+            <MenuButton className="inline-flex items-center text-lg focus:outline-none data-[active]:text-neutral-400 data-[hover]:text-meutral-400">
               All
               <ChevronDownIcon className="size-5 ml-2" />
             </MenuButton>
@@ -37,25 +37,25 @@ export default async function Home() {
               <MenuItem>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                  className="block px-4 py-2 text-sm text-neutral-700 data-[focus]:bg-neutral-100 data-[focus]:text-neutral-900 data-[focus]:outline-none"
                 >
-                  Account settings
+                  Genre 1
                 </a>
               </MenuItem>
               <MenuItem>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                  className="block px-4 py-2 text-sm text-neutral-700 data-[focus]:bg-neutral-100 data-[focus]:text-neutral-900 data-[focus]:outline-none"
                 >
-                  Support
+                  Genre 2
                 </a>
               </MenuItem>
               <MenuItem>
                 <a
                   href="#"
-                  className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
+                  className="block px-4 py-2 text-sm text-neutral-700 data-[focus]:bg-neutral-100 data-[focus]:text-neutral-900 data-[focus]:outline-none"
                 >
-                  License
+                  Genre 3
                 </a>
               </MenuItem>
             </MenuItems>
@@ -63,49 +63,49 @@ export default async function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-12">
           <div className="rounded-xl border border-sky-300 p-6 outline outline-4 outline-sky-500" style={{ borderWidth: "1px" }}>
-            <div className="w-full h-52 mb-5" />
+            <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl" />
             <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
-            <div className="flex mb-5">
-              <div className="m-0 font-bold text-lg">Product name</div>
-              <div className="m-0 ml-auto font-bold text-lg">Price</div>
+            <div className="flex mb-5 text-neutral-800">
+              <div className="font-bold text-lg">Product name</div>
+              <div className="ml-auto font-bold text-lg">Price</div>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">REMOVE FROM CART</button>
+            <button className="w-full text-neutral-800 text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">REMOVE FROM CART</button>
           </div>
           <div className="rounded-xl border border-neutral-300 p-6">
-            <div className="w-full h-52 mb-5" />
-            <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
+            <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl" />
+            <p className="mb-3 font-bold text-neutral-500 text-base">GENRE</p>
             <div className="flex mb-5">
-              <div className="m-0 font-bold text-lg">Product name</div>
-              <div className="m-0 ml-auto font-bold text-lg">Price</div>
+              <span className="font-bold text-lg">Product name</span>
+              <span className="ml-auto font-bold text-lg">Price</span>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-neutral-800 text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
           <div className="rounded-xl border border-neutral-300 p-6">
-            <div className="w-full h-52 mb-5" />
-            <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
+            <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl" />
+            <p className="mb-3 font-bold text-neutral-500 text-base">GENRE</p>
             <div className="flex mb-5">
-              <div className="m-0 font-bold text-lg">Product name</div>
-              <div className="m-0 ml-auto font-bold text-lg">Price</div>
+              <span className="font-bold text-lg">Product name</span>
+              <span className="ml-auto font-bold text-lg">Price</span>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-neutral-800 text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
           <div className="rounded-xl border border-neutral-300 p-6">
-            <div className="w-full h-52 mb-5" />
-            <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
-            <div className="flex mb-5">
-              <div className="m-0 font-bold text-lg">Product name</div>
-              <div className="m-0 ml-auto font-bold text-lg">Price</div>
+            <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl" />
+            <p className="mb-3 font-bold text-neutral-500 text-base">GENRE</p>
+            <div className="flex mb-5 text-neutral-800">
+              <span className="font-bold text-lg">Product name</span>
+              <span className="ml-auto font-bold text-lg">Price</span>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-neutral-800 text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
           <div className="rounded-xl border border-neutral-300 p-6">
-            <div className="w-full h-52 mb-5" />
-            <div className="mb-3 font-bold text-neutral-500 text-base">GENRE</div>
-            <div className="flex mb-5">
-              <div className="m-0 font-bold text-lg">Product name</div>
-              <div className="m-0 ml-auto font-bold text-lg">Price</div>
+            <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl" />
+            <p className="mb-3 font-bold text-neutral-500 text-base">GENRE</p>
+            <div className="flex mb-5 text-neutral-800">
+              <span className="font-bold text-lg">Product name</span>
+              <span className="ml-auto font-bold text-lg">Price</span>
             </div>
-            <button className="w-full text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
+            <button className="w-full text-neutral-800 text-center font-bold text-base p-5 border rounded-lg border-neutral-500 hover:bg-neutral-100" type="button">ADD TO CART</button>
           </div>
           <div className="rounded-xl animate-pulse">
             <div className="w-full h-96 bg-neutral-200 rounded-xl" />
