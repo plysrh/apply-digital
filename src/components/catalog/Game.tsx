@@ -34,7 +34,9 @@ export default function Game({ game, cart, onCartChange }: GameProps) {
       gameExistsInCart ? 'outline outline-4 outline-sky-500 border-sky-100' : 'border-neutral-300',
       'flex flex-col rounded-xl border p-6',
     )}>
-      <div className="w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl bg-cover bg-center" style={{ backgroundImage: `url(${game.image})` }} />
+      <div className="relative w-full h-52 mb-5 bg-neutral-200 rounded-tl-xl rounded-tr-xl bg-cover bg-center" style={{ backgroundImage: `url(${game.image})` }}>
+        {game.isNew && <span className="absolute px-3 py-2 rounded-md bg-neutral-100 text-neutral-800 top-3 left-3 text-base">New</span>}
+      </div>
       <div className="mb-3 font-bold text-neutral-500 text-base">{game.genre}</div>
       <div className="flex mb-5 text-neutral-800">
         <div className="font-bold text-lg">{game.name}</div>
