@@ -11,3 +11,4 @@ Good luck!
 - Colors differ from the original design. This is intentional to use instead the tailwind palette.
 - Some dimensions have been adjusted to make things more responsive.
 - There is a bug between the filter and the total pages. The total pages are the same with or without a filter selected.
+- There is room for loading improvements when redirecting from root to catalog and when filtering and/or changing pages.
