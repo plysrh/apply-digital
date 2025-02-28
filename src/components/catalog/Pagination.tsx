@@ -23,7 +23,7 @@ export default function Pagination({ totalPages, currentPage }: PaginationProps)
     if (page > 1) {
       searchParams.set("page", page.toString());
     }
-
+    // TODO: Find a better way to improving the route change performance.
     router.push(`?${searchParams.toString()}`, { scroll: true });
   };
 

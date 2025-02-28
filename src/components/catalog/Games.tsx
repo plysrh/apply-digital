@@ -36,6 +36,8 @@ export default function Games({ availableFilters, games, totalPages, currentPage
     }
 
     setFilter(availableFilters[index] ? availableFilters[index] : 'All');
+
+    // TODO: Find a better way to improving the route change performance.
     router.push(`?${searchParams.toString()}`, { scroll: true });
   };
 
