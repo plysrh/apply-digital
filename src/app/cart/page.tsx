@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Link from "next/link";
+import { useCallback, useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Game from "@/components/cart/Game";
 import Summary from "@/components/cart/Summary";
@@ -13,7 +13,11 @@ import { type Game as GameType } from "@/utils/endpoint";
 
 export default function CartPage() {
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
   const [cart, setCart] = useState<GameType[]>([]);
+  const handleBackToCatalog = useCallback(() => {
+    router.back();
+  }, []);
   const handleRemoveFromCart = (id: string) => () => {
     const updatedCart = cart.filter(item => item.id !== id);
 
@@ -32,10 +36,10 @@ export default function CartPage() {
     <main className='flex min-h-screen flex-col items-center justify-between'>
       <div className="container w-full px-4 py-12">
         <p className="mb-12">
-          <Link scroll href="/" className="inline-flex items-center text-neutral-800 hover:text-neutral-500">
+          <span className="cursor-pointer inline-flex items-center text-neutral-800 hover:text-neutral-500" onClick={handleBackToCatalog}>
             <ArrowLeftIcon className="size-5 mr-3" />
             <span className="text-base">Back to Catalog</span>
-          </Link>
+          </span>
         </p>
         <h1 className="font-bold mb-3 text-4xl text-neutral-800">Your Cart</h1>
         <div className="mb-12 text-2xl text-neutral-800">
