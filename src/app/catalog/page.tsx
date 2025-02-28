@@ -2,11 +2,11 @@ import { Suspense } from "react";
 import Catalog from "@/components/catalog/Catalog";
 import CatalogSkeleton from "@/components/skeletons/Catalog";
 
-interface HomeProps {
+interface CatalogPageProps {
   searchParams: Record<string, string>;
 }
 
-export default async function CatalogPage({ searchParams }: HomeProps) {
+export default async function CatalogPage({ searchParams }: CatalogPageProps) {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between'>
       <div className="container w-full px-6 py-12">
