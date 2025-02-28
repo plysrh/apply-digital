@@ -1,5 +1,5 @@
-import { Game as GameType } from "@/utils/endpoint";
 import { XMarkIcon } from "@heroicons/react/24/solid";
+import { Game as GameType } from "@/utils/endpoint";
 
 interface GameProps {
   game: GameType;

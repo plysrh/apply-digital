@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import TotalItemsSkeleton from "@/components/skeletons/TotalItems";
-import CartSkeleton from "@/components/skeletons/Cart";
-import SummarySkeleton from "@/components/skeletons/Summary";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 import Game from "@/components/cart/Game";
 import Summary from "@/components/cart/Summary";
+import CartSkeleton from "@/components/skeletons/Cart";
+import SummarySkeleton from "@/components/skeletons/Summary";
+import TotalItemsSkeleton from "@/components/skeletons/TotalItems";
 import { getCart, updateCart } from "@/services/cart";
 import { type Game as GameType } from "@/utils/endpoint";
 

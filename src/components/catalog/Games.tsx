@@ -1,13 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import Game from "@/components/catalog/Game";
-import { type Game as GameType } from "@/utils/endpoint";
+import { useRouter } from "next/navigation";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import Game from "@/components/catalog/Game";
 import { getCart } from "@/services/cart";
+import { type Game as GameType } from "@/utils/endpoint";
 import Pagination from "./Pagination";
-import { useRouter } from "next/navigation";
 
 interface GamesProps {
   availableFilters: string[];
@@ -31,6 +31,7 @@ export default function Games({ availableFilters, games, totalPages, currentPage
     }
 
     if (availableFilters[index]) {
+      searchParams.delete("page");
       searchParams.set("genre", availableFilters[index]);
     }
 

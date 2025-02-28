@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
-import { checkGameIfExistsInCart } from "@/services/cart";
+import { checkGameIfExistsInCart, updateCart } from "@/services/cart";
 import { type Game as GameType } from "@/utils/endpoint";
 import { classNames } from "@/utils/styles";
-import { updateCart } from "@/services/cart";
 
 interface GameProps {
   game: GameType;

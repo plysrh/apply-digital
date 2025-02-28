@@ -1,6 +1,6 @@
+import { useRouter } from "next/navigation";
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import { classNames } from "@/utils/styles";
-import { useRouter } from "next/navigation";
 
 export interface PaginationProps {
   totalPages: number;
